@@ -321,15 +321,20 @@ header{
 	align-items:center;
 	box-shadow: 0 5px 25px 0 rgb(214 215 216 / 80%);
 }
-.about-img,.about-content{
+.about-img{
 	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 }
 .about-content{
+	width:100%;
 	padding:2% ;
 }
 .about-img img{
 	width:100%;
 	padding:2%;
+	position:relative;
 }
 .des-1{
 	display:flex;
@@ -386,9 +391,37 @@ header{
     background-color: #428bca;
 	color: #fff;
 }
+.round-button{
+	position:absolute;
+	width:35%;
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+}
+.click {
+	width: 62px;
+    border-radius: 50%;
+    background: radial-gradient(#6face0 50%, rgba(193, 226, 247, 0.4) 52%);
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.click a{
+	font-size:1.3rem;
+	color:#fff;
+	display:block;
+}
 @media(min-width:760px){
 .about-ico{
     width: 15%;
+}
+.click {
+	width: 78px;
+    height: 78px;
+}
+.click a{
+	font-size:1.4rem;
 }
 }
 @media(min-width:1020px){
@@ -413,6 +446,13 @@ header{
 }
 .about-ico{
     width: 22%;
+}
+.click {
+	width: 82px;
+    height: 82px;
+}
+.click a{
+	font-size:1.5rem;
 }
 }
 /*about content media css ends*/
@@ -459,9 +499,7 @@ header{
 	width:50%;
 	padding:4%;
 }
-.lc-2,
-.lc-4,
-.lc-6{
+.lc-2,.lc-4,.lc-6{
 	border-left:1px solid #d9e8f4 !important;
 }
 }
@@ -578,16 +616,15 @@ header{
 	justify-content:center;
 	flex-direction:column;
 }
-.icon{
+.icon {
 	position:relative;
 	display:flex;
 	align-items:center;
 	justify-content:center;
 	text-align:center;
 	font-size:2rem;
-	width:8%;
-	height:8%;
-	padding:15%;
+	width:60px;
+	height:60px;
 	color:#428bca;
 	border-radius:50%;
 	box-shadow:0px 0 25px rgb(0 0 0 / 20%);
@@ -631,9 +668,8 @@ header{
 }
 .icon{
 	font-size:2.2rem;
-	width:8%;
-	height:8%;
-	padding:14%;
+	width:75px;
+	height:75px;
 	margin:0 0 5% 0%;
 }
 .card p{
@@ -660,16 +696,13 @@ header{
 }
 .icon{
 	font-size:2rem;
-	width:8%;
-	height:8%;
-	padding:13%;
+	width:80px;
+	height:80px;
 	margin:0 0 5% 0;
 }
 .card h3{
 	font-size:1.5rem;
 	font-weight:600;
-}
-.card p{
 }
 .card h3::after{
 	margin:0 0 0 10%;
@@ -1114,7 +1147,6 @@ header{
 .name,.ename{
 	border: 1px solid #ced4da;
     width: 100%;
-    height: 10vh;
     margin: 5% 0;
     padding: 5%;
 }
@@ -1122,7 +1154,6 @@ header{
 	border: 1px solid #ced4da;
     margin: auto;
     width: 100%;
-    height: 10vh;
     margin: 5% 0;
     padding: 6%;
 }
@@ -1130,7 +1161,6 @@ header{
 	border: 1px solid #ced4da;
     margin: auto;
     width: 100%;
-    height: 22vh;
     margin: 3% 0;
     padding: 2%;
 }
@@ -1150,17 +1180,12 @@ header{
 	margin:auto;
 }
 .name,.ename{
-	height:8vh;
 	margin:2% 0;
 	padding:2%;
 }
 .subs{
-	height:8vh;
 	margin:2% 0;
 	padding:2%;
-}
-.mess{
-	height:22vh;
 }
 .form-btn{
 	padding:2%;
@@ -1169,17 +1194,15 @@ header{
 @media(min-width:1020px){
 .name,.ename{
 	width:49%;
-	height:5vh;
-	padding:2%;
+	padding:1.2%;
 }
 .subs{
 	width:98.9%;
-	height:5vh;
 	margin:1% 0;
+	padding:1.2%;
 }
 .mess{
 	width:98.9%;
-	height:20vh;
 	margin:2% 0;
 	padding:2%;
 }
@@ -1283,18 +1306,16 @@ footer{
 }
 .f-input{
 	width:69%;
-	height:8vh;
-	padding:2%;
+	padding:4%;
 	border:0;
 	margin:0;
 }
 .n-btn{
 	margin:0;
 	width:29%;
-	height:8vh;
 	background-color:#428bca;
 	color:#fff;
-	padding:%;
+	padding:4%;
 	border:0;
 }
 @media(min-width:760px){
